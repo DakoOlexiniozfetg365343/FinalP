@@ -1,0 +1,35 @@
+.container-card {
+  & .container-card__image img {
+    width: 100%;
+  }
+
+  & .card__info {
+    background-color: var(--footer-bg-color);
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 20px;
+    padding-left: 1em;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  & .card__info-title {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+
+  & .card__info-creator img {
+    width: 20px;
+  }
+
+  & .card__info-creator {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+  }
+
+  & .card__info-creator span {
+    font-weight: 400;
+  }
+}

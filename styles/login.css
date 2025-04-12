@@ -1,0 +1,129 @@
+@import url(footer.css);
+@import url(root.css);
+@import url(body.css);
+@import url(else.css);
+@import url(header.css);
+@import url(container-login.css);
+
+
+
+.connection-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-top: 40px;
+  padding-bottom: 1em;
+  align-items: center;
+
+  & .connection {
+    align-items: center;
+    display: flex;
+    width: 320px;
+    cursor: pointer;
+    color: var(--text-color);
+    gap: 1em;
+    border: 1px solid var(--actions-color);
+    border-radius: 20px;
+    padding: 10px 20px 10px 40px;
+    background-color: var(--footer-bg-color);
+
+    & img {
+      width: 40px;
+    }
+  }
+}
+
+.container__right-side {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    .left-side__photo img {
+      max-width: 397px;
+    }
+
+    & .right-side__title {
+      font-weight: 600;
+      font-size: 38px;
+    }
+
+    & .right-side__subtitle {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+  .header__navigation .burger img {
+    visibility: visible;
+  }
+
+  header .container .header__navigation ul {
+    display: none;
+  }
+
+  header .container {
+    flex-wrap: nowrap;
+    max-width: 700px;
+  }
+
+  .last-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 25vh 1fr;
+    & .right-side__title {
+      justify-content: center;
+      display: flex;
+    }
+
+    & .right-side__subtitle {
+      justify-content: center;
+      display: flex;
+    }
+  }
+
+  .container__right-side {
+    max-width: 100%;
+  }
+
+  .container .container__left-side {
+    max-width: 100%;
+  }
+
+  .connection-container {
+    .connection {
+      max-width: 15em;
+    }
+  }
+
+  .last-section {
+    & .right-content__button button {
+      max-width: 20em;
+      justify-content: center;
+    }
+    & .right-content__button {
+      justify-content: center;
+      display: flex;
+    }
+
+    & .right-content__input {
+      display: flex;
+      justify-content: center;
+    }
+
+    & .right-content__input input {
+      max-width: 20em;
+      justify-content: center;
+    }
+  }
+}

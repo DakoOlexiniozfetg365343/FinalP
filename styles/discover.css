@@ -1,0 +1,116 @@
+.discover-more__container {
+  display: flex;
+  flex-direction: column;
+
+  & .container__up-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .container__up-content-text {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  & .container__title {
+    font-weight: 600;
+    font-size: 38px;
+  }
+
+  & .container__subtitle {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  & .container__up-content-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+
+    & .container__button-view button {
+      display: flex;
+      align-items: end;
+      transition: background-color 1s ease;
+      gap: 1em;
+      border: 2px solid #a259ff;
+      border-radius: 20px;
+      padding: 15px 50px;
+      color: white;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    & .container__button-view button:hover {
+      background-color: white;
+      color: black;
+    }
+    & .container__button-view span {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    & .container__button-view button img {
+      width: 20px;
+    }
+  }
+}
+
+.container__nfts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875em;
+  padding-top: 60px;
+
+  & .container__nft {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-bg-color);
+    border-radius: 20px;
+  }
+
+  & .nft__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  & .nft__image img {
+    width: 330px;
+  }
+
+  & .nft__title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  & .nft__creator {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  & .nft__creator img {
+    width: 24px;
+  }
+
+  & .nft__creator span {
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  & .nft-content-up {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  & .nft__price-bid {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+  }
+  & .nft__eth-weth {
+    display: flex;
+    justify-content: space-between;
+  }
+}

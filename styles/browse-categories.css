@@ -1,0 +1,31 @@
+.browse-categories__container {
+  display: flex;
+  flex-direction: column;
+
+  & .container__categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    gap: 1.875em;
+  }
+}
+
+.container__category {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: var(--footer-bg-color);
+  border-radius: 20px;
+
+  & .category__name {
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  & img {
+    width: 240px;
+  }
+}

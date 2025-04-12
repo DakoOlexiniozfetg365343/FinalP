@@ -1,0 +1,9 @@
+:root {
+  --header-bg-color: #2b2b2b;
+  --wrapper-bg-color: #2b2b2b;
+  --footer-bg-color: #3b3b3b;
+  --text-color: #ffffff;
+  --actions-color: #a259ff;
+  --clock-color: rgba(59, 59, 59, 0.5);
+  --placeholder-color: black;
+}

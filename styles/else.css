@@ -1,0 +1,24 @@
+.section {
+  padding: 5rem 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+input::placeholder {
+  color: var(--placeholder-color);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+}

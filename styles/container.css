@@ -1,0 +1,70 @@
+.container img {
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1050px;
+  padding: 0px 115px;
+  box-sizing: content-box;
+  display: flex;
+  gap: 2em;
+  margin: 0 auto;
+
+  & .container__title {
+    font-size: 67px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  & .container-info {
+    max-width: 510px;
+  }
+  & .container__subtitle {
+    padding-top: 1em;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3em;
+    text-transform: capitalize;
+  }
+  & .container__button {
+    padding: 30px 0px;
+  }
+
+  & .first-section-button {
+    border-radius: 20px;
+    padding: 0px 50px;
+    width: 224px;
+    height: 60px;
+    background-color: var(--actions-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+
+  & .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+  }
+
+  & .container__stats {
+    display: flex;
+    gap: 5em;
+  }
+
+  & .stat .stat__amount {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  & .stat .stat__name {
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-top: 5px;
+    font-size: 23px;
+  }
+}
